@@ -1,0 +1,61 @@
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+
+nav a {
+    padding: 2.5rem;
+    border-top: 3px solid transparent;
+}
+
+nav a:hover {
+    border-top: 3px solid #0065fc;
+    color: #0065fc;
+}
+
+#logobooki {
+    margin-right: auto;
+    padding: 0 2rem;
+    height: 25px;
+}
+
+.sousnav {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .sousnav {
+        flex-basis: 100%;
+    }
+    .sousnav a {
+        flex-basis: 100%;
+        text-align: center;
+        border-bottom: 3px solid #F2F2F2;
+     
+    }
+    .sousnav a:hover {
+        border-bottom-color: #0065fc;
+        border-top: 3px solid transparent;
+    }
+
+    #logobooki {
+        margin-left: auto;
+    }
+}
