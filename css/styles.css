@@ -11,7 +11,7 @@ a {
 body {
     margin: 0 auto;
 }
-
+/* header et navigation */
 nav {
     display: flex;
     align-items: center;
@@ -40,22 +40,51 @@ nav a:hover {
     display: flex;
 }
 
-@media (max-width: 768px) {
-    .sousnav {
-        flex-basis: 100%;
-    }
-    .sousnav a {
-        flex-basis: 100%;
-        text-align: center;
-        border-bottom: 3px solid #F2F2F2;
-     
-    }
-    .sousnav a:hover {
-        border-bottom-color: #0065fc;
-        border-top: 3px solid transparent;
-    }
 
-    #logobooki {
-        margin-left: auto;
-    }
+.contenu {
+    padding: 0 2rem;
 }
+
+.contenu h2 {
+    margin-bottom: 0.2rem;
+}
+
+.contenu p {
+    margin-bottom: 1.2rem;
+}
+
+/* barre de recherche */
+.recherche {
+    display: flex;
+}
+
+.recherche i {
+    padding: 1.2rem 1.2rem;
+    background-color: #F2F2F2;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.recherche input {
+    border: 1px solid #F2F2F2;
+    padding-right: 2rem;
+}
+
+.recherche input::placeholder {
+    color: inherit;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.recherche button {
+    background-color: #0065fc;
+    border-radius: 0 1rem 1rem 0;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0 1.5rem; 
+    cursor: pointer;
+}
+
+ 
