@@ -33,13 +33,12 @@ nav a:hover {
 #logobooki {
     margin-right: auto;
     padding: 0 2rem;
-    height: 25px;
+    height: 19px;
 }
 
 .sousnav {
     display: flex;
 }
-
 
 .contenu {
     padding: 0 2rem;
@@ -47,10 +46,12 @@ nav a:hover {
 
 .contenu h2 {
     margin-bottom: 0.2rem;
+    margin-top: 2rem;
 }
 
 .contenu p {
     margin-bottom: 1.2rem;
+    margin-top: 0.5rem;
 }
 
 /* barre de recherche */
@@ -67,13 +68,13 @@ nav a:hover {
 .recherche input {
     border: 1px solid #F2F2F2;
     padding-right: 2rem;
+    padding-left: 1rem;
 }
 
 .recherche input::placeholder {
     color: inherit;
     font-size: 1.1rem;
     font-weight: bold;
-    padding: 1rem;
 }
 
 .recherche button {
@@ -86,5 +87,75 @@ nav a:hover {
     padding: 0 1.5rem; 
     cursor: pointer;
 }
+
+/*--Filters---*/
+.filters {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 700;
+    font-size: 110%;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    gap: 2.5rem;
+}
+
+.textfilter {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding-left: 1rem;
+}
+
+.filterlist {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 4rem;
+}
+.filter span {
+    padding: 0.3rem;
+    font-weight: bold;
+}
+
+.filter {
+    border: 3px solid #F2F2F2;
+    border-radius: 2rem;
+    padding: 0.5rem;
+}
+
+.filter i {
+    color:#0065fc;
+    padding: 0.5rem;
+}
+
+.filter:hover {
+    background-color: #deebff;
+}
+/*--Info--*/
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: -1rem;
+}
+
+.info i {
+    color: #0065fc;
+    border: solid 1px #d9d9d9;
+    border-radius: 50%;
+    padding: 7px 11px 7px 11px;
+    margin-left: 0.5rem;;
+}
+
+.info p {
+    margin-top: 1.2rem;
+    padding-left: 1rem;
+}
+
+
+
 
  
