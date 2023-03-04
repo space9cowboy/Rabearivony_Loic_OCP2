@@ -1,3 +1,5 @@
+
+/*--HEADER--*/
 .sousnav {
     flex-basis: 100%;
 }
@@ -17,3 +19,152 @@
     margin-top: 3%;
 }
 
+/*--POST-HEADER--*/
+
+.contenu .contenu-titre p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/*--NAVBAR--*/
+.recherche .search-text {
+    display: none;
+}
+
+.fa-magnifying-glass {
+    display: inline;
+}
+
+/*--FILTRES--*/
+.contenu .filters {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 0rem;
+    margin-top: 1rem;
+}
+
+.filters .text-filter {
+    padding-left: 0rem;
+}
+
+.filters .filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    gap: 1rem;
+}
+
+.filter {
+    display: flex;
+    flex-basis: 47%;
+}
+
+.filter span {
+    font-size: 11px;
+    margin-top: 6px;
+}
+
+/*--INFO--*/
+.info .icon-info i {
+    margin-left: 0rem;
+}
+
+.info {
+    margin-bottom: 1.5rem;
+}
+/*--SECTION-HEBERGEMENT-POPULAIRE--*/
+.section-liste {
+    display: flex;
+    flex-direction: column-reverse; 
+    padding: 0;
+}
+/*--SECTION-HEBERGEMENTS--*/
+
+.section-liste .hebergement {
+    background-color: white;
+}
+
+.hebergement .section-hebergement-liste {
+    margin-top: 0.5rem;
+    gap: 1rem;
+}
+
+.section-liste .hebergement h2 {
+    margin-top: -1rem;
+    
+}
+/*--SECTION-POPULAIRE--*/
+.section-liste .populaire {
+    border-radius: 0;
+}
+
+.populaire .populaire-flex {
+    gap: 1rem;
+    margin-top: -2rem;
+    flex-direction: column;
+}
+
+.populaire .populaire-card {
+    width: 100%;
+}
+
+.populaire .populaire-card img {
+    width: 260px;
+}
+/*--AFFICHER-PLUS--*/
+.hebergement .afficher-plus {
+    display: none;
+}
+
+/*--SECTION-ACTIVITES--*/
+.section-activites {
+    padding: 1.5rem;
+    flex-basis: 100%;
+}
+
+.section-activites .titre-activites {
+    padding-right: 15rem;
+    margin-top: 0rem;
+}
+
+.section-activites .activites-flex {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    gap: 2rem;
+    margin-top: -2rem;
+}
+
+.activites-flex .activites-card {
+    display: flex;
+    flex-direction: column;
+    height: 235px;
+    width: 100%;
+}
+
+.activites-flex .activites-card img {
+    display: flex;
+    align-items: center;
+	justify-content: center;
+    object-fit: cover;
+    height: 180px;
+    flex-basis: 100%;
+}
+
+/*--FOOTER--*/
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.footer-end {
+    margin: 0 0 0 0;
+}

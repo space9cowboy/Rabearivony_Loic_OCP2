@@ -10,7 +10,9 @@ a {
 
 body {
     margin: 0 auto;
+    max-width: 1600px;
 }
+
 /* header et navigation */
 nav {
     display: flex;
@@ -44,12 +46,12 @@ nav a:hover {
     padding: 0 2rem;
 }
 
-.contenu h2 {
+.contenu-titre h2 {
     margin-bottom: 0.2rem;
     margin-top: 2rem;
 }
 
-.contenu p {
+.contenu-titre p {
     margin-bottom: 1.2rem;
     margin-top: 0.5rem;
 }
@@ -59,16 +61,21 @@ nav a:hover {
     display: flex;
 }
 
-.recherche i {
+.fa-location-dot {
     padding: 1.2rem 1.2rem;
     background-color: #F2F2F2;
     border-radius: 1rem 0 0 1rem;
+}
+
+.fa-magnifying-glass {
+    display: none;
 }
 
 .recherche input {
     border: 1px solid #F2F2F2;
     padding-right: 2rem;
     padding-left: 1rem;
+    overflow: auto;
 }
 
 .recherche input::placeholder {
@@ -101,7 +108,7 @@ nav a:hover {
     gap: 2.5rem;
 }
 
-.textfilter {
+.text-filter {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -110,7 +117,7 @@ nav a:hover {
     padding-left: 1rem;
 }
 
-.filterlist {
+.filter-list {
     display: flex;
     flex-flow: row wrap;
     gap: 4rem;
@@ -162,7 +169,7 @@ nav a:hover {
 .section-liste {
     display: flex;
     gap: 2rem;
-    height: 50rem;
+    padding: 2rem;
 }
 
 .section-liste > div {
@@ -172,38 +179,35 @@ nav a:hover {
 }
 
 .section-liste .hebergement {
-    flex-basis: 66%;
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
 }
 
 .section-liste .hebergement h2 {
     margin-left: 0.5rem;
 }
 
-.section-liste .populaire {
-    flex-basis: 33%;
-}
-
-.afficher-plus {
-    padding-top: 1px;
-    font-size: 17px;
-}
 
 /*--section-hebergement-liste-*/
 .section-hebergement-liste {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content:space-around;
+    justify-content: space-around;
     margin-bottom: 2rem;
     margin-top: 2.5rem;
+    width: 100%;
+    flex-direction: row;
 }
 
 
 /*--Les plus populaires--*/
 .section-liste .populaire {
     display: flex;
-    gap: 2.2rem;
+    gap: 2.5rem;
     flex-direction: column;
+    flex-basis: 29%;
 }
 
 
@@ -218,6 +222,12 @@ nav a:hover {
 }
 
 /*--popualaire-card--*/
+.populaire {
+    display: flex;
+    flex-direction: column;
+}
+
+
 .populaire-flex {
     display: flex;
     flex-direction: column;
@@ -226,19 +236,23 @@ nav a:hover {
 
 .populaire-card {
     display: flex;
-    padding: 0.5rem;
+    padding: 0.4rem;
     background-color: white;
     gap: 1.5rem;
-    border-radius: 1.5rem;
+    border-radius: 1.7rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(133, 15, 15, 0.19);
+    flex-direction:row;
+    flex-basis: 100%;
 }
 
 .populaire-card img {
     object-fit: cover;
-    height: 11rem;
-    width: 19rem;
-    border-radius: 15px 0 0 15px;
+    height: 166px;
+    width: 246px;
+    border-radius: 20px 0 0 20px;
     overflow: hidden;
+    align-items: center;
+	justify-content: center;
 }
 
 .populaire-text {
@@ -262,18 +276,20 @@ nav a:hover {
 /*--hebergement-card--*/
 .hebergement-card {
     background-color: white;
-    border-radius: 1.5rem;
-    padding: 0.5rem;
+    border-radius: 1.7rem;
+    padding: 0.4rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(133, 15, 15, 0.19);
+    width: 262px;
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
-    width: 15rem;
 }
 
 .hebergement-card img {
     object-fit: cover;
-    height: 10rem;
+    height: 8rem;
     width: 100%;
-    border-radius: 15px 15px 0 0;
+    border-radius: 20px 20px 0 0;
     overflow: hidden;
 }
 
@@ -294,6 +310,11 @@ nav a:hover {
     display: flex;
 }
 
+.afficher-plus {
+    padding-top: 1px;
+    font-size: 17px;
+}
+
 /*--section-activité--*/
 .section-activites {
     display:flex;
@@ -301,6 +322,7 @@ nav a:hover {
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 5rem;
+    padding: 2rem;
 }
 
 .titre-activites {

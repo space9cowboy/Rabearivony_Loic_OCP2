@@ -1,0 +1,53 @@
+
+/*--FILTER--*/
+.filters .filter-list {
+    gap: 1rem;
+}
+
+.fa-magnifying-glass {
+    display: none;
+}
+
+/*--SECTION-HEBERGEMENT-POPUALIRE--*/
+.section-liste {
+    padding: 2rem;
+    flex-direction: column;
+}
+
+/*--SECTION-POPULAIRE--*/
+.section-liste .populaire {
+    display: flex;
+    flex-direction: column;
+}
+
+.populaire .populaire-card {
+    flex-basis: 30%;
+}
+
+.populaire .populaire-flex {
+    display: flex;
+    flex-flow: wrap; 
+    gap: 2.5rem;
+}
+
+.populaire .populaire-card img {
+    height: 176px;
+    width: 110px;
+}
+
+/*--SECTION-ACTIVITES--*/
+.section-activites {
+    padding: 2rem;
+}
+
+.section-activites .titre-activites {
+    margin-top: -1rem;
+}
+
+.section-activites .activites-card {
+    justify-content: flex-start;
+}
+
+.section-activites .activites-card img {
+    height: 250px;
+}

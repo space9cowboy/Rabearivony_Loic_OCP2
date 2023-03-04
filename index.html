@@ -8,16 +8,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
     <link rel="stylesheet" media="screen and (max-width: 991px)" href="css/styles_tablette.css" />
     <link rel="stylesheet" media="screen and (max-width: 767px) and (orientation: portrait)" href="css/styles_mobile.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/10fdb5e543.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/styles.css"/>
     <title>Booki</title>
 </head>
 <body>
+
 <!--Mise en place du Header composé du logo  et  d'une balise nav-->
 <header>
     <nav>
@@ -30,24 +31,30 @@
 </header>
 
 <!--les titres-->
-<main class="contenu">
-    <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-    <p>En plein centre-ville ou en pleine nature</p>
+<main>
+<section class="contenu">
+    <div class="contenu-titre">
+        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+        <p>En plein centre-ville ou en pleine nature</p>
+    </div>
 
-<!--barre de recherche-->
+<!--barre de recherche/NAVBAR-->
     <div class="recherche">
         <i class="fa-sharp fa-solid fa-location-dot"></i>
         <input type="text" name="ville" id="ville" placeholder="Marseille,France"
         size="24" maxlength="20">
-        <button>Rechercher</button>  
+        <button type="submit" id="search-button">
+            <span class="search-text">Rechercher</span>
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        </button>  
     </div>
      
 <!--filter-->
     <div class="filters">
-        <div class="textfilter">
+        <div class="text-filter">
             <h3>Filtres</h3>
         </div>
-            <div class="filterlist">
+            <div class="filter-list">
                 <div class="filter">
                     <i class="fa-solid fa-money-bill-wave"></i>
                     <span>Économique</span>
@@ -69,12 +76,12 @@
 
 <!--Info-->
     <div class="info">
-        <div class="iconinfo">
+        <div class="icon-info">
             <i class="fa-solid fa-info"></i>
         </div>
         <p>Plus de 500 hébergements sont disponibles dans cette ville</p>
     </div>
-
+</section>
 
 <!--section, contenu du site, hébergement à marseille-->
 <section class="section-liste">
@@ -239,17 +246,17 @@
         <h2>Activités à Marseille</h2>
     </div>
         <div class="activites-flex">
-            <div class="activites-card"
+            <div class="activites-card">
                 <a href="#">
                     <img src="./images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
                     <div class="activites-text">
                         <h3>Vieux Port</h3>
-                     </div>
+                    </div>
                 </a>
             </div>
             <div class="activites-card">
                 <a href="#">
-                    <img src="./images/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+                    <img src="./images/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de pomègues">
                     <div class="activites-text">
                         <h3>Fort de pomègues</h3>
                     </div>
@@ -257,7 +264,7 @@
             </div>
             <div class="activites-card">
                 <a href="#">
-                    <img src="./images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
+                    <img src="./images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc national des calanques">
                     <div class="activites-text">
                         <h3>Parc national des calanques</h3>
                     </div>
@@ -266,7 +273,7 @@
             
             <div class="activites-card">
                 <a href="#">
-                    <img src="./images/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+                    <img src="./images/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la Garde">
                     <div class="activites-text">
                         <h3>Notre-Dame-de-la-Garde</h3>
                     </div>
@@ -277,7 +284,7 @@
 </main>
 
 <!--footer-->
-<footer>
+<footer class="footer-end">
     <div class="footer-container">
         <div class="footer-list">
             <h3 class="footer-titre">À propos</h3>
