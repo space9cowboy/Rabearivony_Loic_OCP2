@@ -243,6 +243,11 @@ nav a:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(133, 15, 15, 0.19);
     flex-direction:row;
     flex-basis: 100%;
+    transition: all 150ms ease-in-out;
+}
+
+.populaire-card:hover {
+    transform: scale(1.01   );
 }
 
 .populaire-card img {
@@ -283,6 +288,11 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    transition: all 150ms ease-in-out;
+}
+
+.hebergement-card:hover {
+    transform: scale(1.01   );
 }
 
 .hebergement-card img {
@@ -342,6 +352,11 @@ nav a:hover {
     border-radius: 20px;
     justify-content: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 150ms ease-in-out;
+}
+
+.activites-card:hover {
+    transform: scale(1.01   );
 }
 
 .activites-card img {
