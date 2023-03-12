@@ -93,7 +93,12 @@
 
 .section-liste .hebergement h2 {
     margin-top: -1rem;
-    
+}
+
+.section-liste .hebergement-card {
+    display: flex;
+    flex-direction:column;
+    width: 100%;
 }
 /*--SECTION-POPULAIRE--*/
 .section-liste .populaire {
@@ -132,7 +137,7 @@
 .section-activites .activites-flex {
     display: flex;
     flex-direction: column;
-    flex-basis: 100%;
+    width: 100%;
     gap: 2rem;
     margin-top: -2rem;
 }
