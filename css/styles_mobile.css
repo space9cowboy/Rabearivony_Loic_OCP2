@@ -89,6 +89,7 @@
 .hebergement .section-hebergement-liste {
     margin-top: 0.5rem;
     gap: 1rem;
+    flex-direction: column;
 }
 
 .section-liste .hebergement h2 {
@@ -104,6 +105,7 @@
 .section-liste .populaire {
     border-radius: 0;
 }
+
 
 .populaire .populaire-flex {
     gap: 1rem;

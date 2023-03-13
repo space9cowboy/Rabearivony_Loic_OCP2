@@ -20,6 +20,12 @@
     flex-direction: column;
 }
 
+.populaire .populaire-global {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .populaire .populaire-card {
     flex-basis: 30%;
 }

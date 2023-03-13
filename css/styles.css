@@ -10,7 +10,8 @@ a {
 
 body {
     margin: 0 auto;
-    max-width: 1600px;
+    max-width: 1700px;
+    min-width: 370px;
 }
 
 /* header et navigation */
@@ -69,6 +70,7 @@ nav a:hover {
 
 .fa-magnifying-glass {
     display: none;
+    background-color: #0065fc;
 }
 
 .recherche input {
@@ -179,7 +181,7 @@ nav a:hover {
 }
 
 .section-liste .hebergement {
-    flex-basis: 70%;
+    flex-basis: 66%;
     display: flex;
     flex-direction: column;
 }
@@ -192,22 +194,24 @@ nav a:hover {
 /*--section-hebergement-liste-*/
 .section-hebergement-liste {
     display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: space-around;
-    margin-bottom: 2rem;
-    margin-top: 2.5rem;
-    width: 100%;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 100%;
 }
 
+.hebergement-global {
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+}
 
 /*--Les plus populaires--*/
 .section-liste .populaire {
     display: flex;
     gap: 2.5rem;
     flex-direction: column;
-    flex-basis: 29%;
+    flex-basis: 33%;
 }
 
 
@@ -280,14 +284,14 @@ nav a:hover {
 
 /*--hebergement-card--*/
 .hebergement-card {
+    display: flex;
     background-color: white;
     border-radius: 1.7rem;
     padding: 0.4rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(133, 15, 15, 0.19);
-    width: 262px;
-    display: flex;
-    flex-grow: 1;
     flex-direction: column;
+    margin: 20px;
+    flex-basis: 33%;
     transition: all 150ms ease-in-out;
 }
 
@@ -378,7 +382,7 @@ nav a:hover {
 
 footer {
     background-color:#F2F2F2;
-    width: 96%;
+    margin-right: 2rem;
     margin-left: 2rem;
 }
 
