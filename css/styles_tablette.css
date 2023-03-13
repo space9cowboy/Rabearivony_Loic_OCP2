@@ -18,22 +18,25 @@
 .section-liste .populaire {
     display: flex;
     flex-direction: column;
+    width: 100%; 
 }
 
 .populaire .populaire-global {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    width: 100%; 
 }
 
 .populaire .populaire-card {
-    flex-basis: 30%;
+    width: 30%;
 }
 
 .populaire .populaire-flex {
     display: flex;
-    flex-flow: wrap; 
     gap: 2.5rem;
+    flex-direction: row; 
+    width: 100%;
 }
 
 .populaire .populaire-card img {
