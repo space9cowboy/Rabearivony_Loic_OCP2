@@ -1,3 +1,4 @@
+/*--General--*/
 a {
     color: inherit;
     text-decoration: none;
@@ -10,7 +11,7 @@ a {
 
 body {
     margin: 0 auto;
-    max-width: 1700px;
+    max-width: 1440px;
 }
 
 /* header et navigation */
@@ -46,9 +47,10 @@ nav a:hover {
     padding: 0 2rem;
 }
 
-.contenu-titre h2 {
+.contenu-titre h1 {
     margin-bottom: 0.2rem;
     margin-top: 2rem;
+    font-size: 24px;
 }
 
 .contenu-titre p {
@@ -115,6 +117,10 @@ nav a:hover {
     align-items: center;
     font-size: 16px;
     padding-left: 1rem;
+}
+
+.text-filter h2 {
+    font-size: 18.72px;
 }
 
 .filter-list {
@@ -207,7 +213,7 @@ nav a:hover {
 /*--Les plus populaires--*/
 .section-liste .populaire {
     display: flex;
-    gap: 2.5rem;
+    gap: 1.1rem;
     flex-direction: column;
     flex-basis: 33%;
 }
@@ -309,6 +315,178 @@ nav a:hover {
 .hebergement-card p {
     margin: 0.5rem;
 }
+
+@media screen and (max-width: 1410px) {
+   .hebergement-card h3 {
+      margin-right: 0px;
+      font-size: 17px;
+    }
+
+    .hebergement-card p {
+        font-size: 15px;
+    }
+
+    .populaire-card h3 {
+        margin-right: 0px;
+        font-size: 17px;
+    }
+
+    .populaire-card p {
+        font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width: 1310px) {
+    .hebergement-card h3 {
+       margin-right: 0px;
+       font-size: 16px;
+     }
+    
+    .hebergement-card p {
+        font-size: 14px;
+    }
+ 
+     .populaire-card h3 {
+         margin-right: 0px;
+         font-size: 16px;
+     }
+    
+     .populaire-card p {
+         font-size: 14px;
+     }
+   }
+
+   @media screen and (max-width: 1270px) {
+    .hebergement-card h3 {
+       margin-right: 0px;
+       font-size: 15px;
+     }
+    
+    .hebergement-card p {
+        font-size: 13px;
+    }
+ 
+     .populaire-card h3 {
+         margin-right: 0px;
+         font-size: 15px;
+     }
+    
+    .populaire-card p {
+        font-size: 13px;
+    }
+    }
+
+    @media screen and (max-width: 1230px) {
+        .hebergement-card h3 {
+           margin-right: 0px;
+           font-size: 14px;
+         }
+        
+        .hebergement-card p {
+            font-size: 12px;
+        }
+     
+         .populaire-card h3 {
+             margin-right: 0px;
+             font-size: 14px;
+         }
+        
+        .populaire-card p {
+            font-size: 12px;
+        }
+        }
+
+      
+   @media screen and (max-width: 1140px) {
+    .hebergement-card h3 {
+       margin-right: 0px;
+       font-size: 13px;
+     }
+    
+    .hebergement-card p {
+        font-size: 11px;
+    }
+ 
+     .populaire-card h3 {
+         margin-right: 0px;
+         font-size: 13px;
+     }
+
+    .populaire-card p {
+        font-size: 11px;
+    }
+    }
+
+    @media screen and (max-width: 1110px) {
+        .hebergement-card h3 {
+           margin-right: 0px;
+           font-size: 12px;
+         }
+        
+        .hebergement-card p {
+            font-size: 10px;
+        }
+     
+         .populaire-card h3 {
+             margin-right: 0px;
+             font-size: 12px;
+         }
+    
+        .populaire-card p {
+            font-size: 10px;
+        }
+        }
+    
+        @media screen and (max-width: 1080px) {
+            .hebergement-card h3 {
+               margin-right: 0px;
+               font-size: 11px;
+             }
+            
+            .hebergement-card p {
+                font-size: 9px;
+            }
+         
+             .populaire-card h3 {
+                 margin-right: 0px;
+                 font-size: 11px;
+             }
+        
+            .populaire-card p {
+                font-size: 9px;
+            }
+            }
+        
+        @media  screen and (max-width:1320px){
+            .activites-text h3 {
+                font-size: 17px;
+            }
+        }
+
+        @media  screen and (max-width:1225px){
+            .activites-text h3 {
+                font-size: 16px;
+            }
+        }
+
+        @media  screen and (max-width:1170px){
+            .activites-text h3 {
+                font-size: 15px;
+            }
+        } 
+        
+        @media  screen and (max-width:1115px){
+            .activites-text h3 {
+                font-size: 14px;
+            }
+        }
+
+        @media  screen and (max-width:1060px){
+            .activites-text h3 {
+                font-size: 13px;
+            }
+        }
+    
 
 .blue {
     color:#0065fc;
@@ -417,3 +595,5 @@ footer {
     padding: 5px;
 }
 
+  
+  

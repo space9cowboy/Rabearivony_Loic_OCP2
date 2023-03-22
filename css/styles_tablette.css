@@ -14,6 +14,16 @@
     flex-direction: column;
 }
 
+.hebergement-global .hebergement-card h3,
+.populaire-card .populaire-text h3 {
+    font-size: 14px;
+}
+
+.hebergement-global .hebergement-card p,
+.populaire-card .populaire-text p {
+    font-size: 12px;
+}
+
 /*--SECTION-POPULAIRE--*/
 .section-liste .populaire {
     display: flex;
